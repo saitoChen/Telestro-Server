@@ -1,0 +1,35 @@
+{
+  "name": "telesto-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@koa/multer": "^2.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-jwt": "^3.6.0",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^8.0.8",
+    "koa-static": "^5.0.0",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_env=dev node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saitoChen/Telestro-Server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saitoChen/Telestro-Server/issues"
+  },
+  "homepage": "https://github.com/saitoChen/Telestro-Server#readme"
+}
