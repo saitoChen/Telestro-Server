@@ -20,7 +20,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env NODE_env=dev node index.js"
+    "dev": "cross-env NODE_env=dev node index.js",
+    "build": "pm2 start ecosystem.config.js --only prod --watch"
   },
   "repository": {
     "type": "git",
