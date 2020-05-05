@@ -115,7 +115,7 @@ async function updateOldArticle(ctx) {
 async function getUploadImg(ctx) {
   if (ctx.req.file.filename) {
     let filename = ctx.req.file.filename
-    let path = process.env.NODE_env === 'dev' ? `http://localhost:3000/imgs/${filename}` : `http://www.shreddedbutter.xyz/imgs/${filename}`
+    let path = process.env.NODE_env === 'dev' ? `http://localhost:3000/imgs/${filename}` : `/imgs/${filename}`
     let result = await uploadImg({
       img_id: +new Date(),
       name: filename,
